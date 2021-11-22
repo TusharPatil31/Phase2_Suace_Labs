@@ -1,6 +1,7 @@
 @LoginFeature
 Feature: Login Feature
 
+	@Regression
   Scenario Outline: Positive login scenario
     Given User has lunched website
     When User Enter correct username "<UserName>" and password "<Password>"
@@ -10,7 +11,8 @@ Feature: Login Feature
     Examples: 
       | UserName      | Password     | Product  |
       | standard_user | secret_sauce | PRODUCTS |
-
+      
+	@Regression
   Scenario Outline: Negative login scenario
     Given User has lunched website
     When User Enter correct username "<UserName>" and password "<Password>"

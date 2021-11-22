@@ -1,0 +1,232 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2021-11-22T05:17:53.141Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1072881427,
+              "status": "passed"
+            },
+            "match": {
+              "location": "BaseClass.setup()"
+            }
+          }
+        ],
+        "line": 13,
+        "name": "Positive login scenario",
+        "description": "",
+        "id": "login-feature;positive-login-scenario;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 69857922,
+              "status": "passed"
+            },
+            "match": {
+              "location": "BaseClass.teardown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 317599408,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User has lunched website",
+            "match": {
+              "location": "LoginStepDefs.user_has_lunched_website()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 230683423,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User Enter correct username \"standard_user\" and password \"secret_sauce\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "standard_user",
+                  "offset": 29
+                },
+                {
+                  "val": "secret_sauce",
+                  "offset": 58
+                }
+              ],
+              "location": "LoginStepDefs.user_enter_correct_username_something_and_password_something(String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 134240982,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "User clicks on login Button",
+            "match": {
+              "location": "LoginStepDefs.user_clicks_on_login_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 158931159,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "User should be navigated to the product page \"PRODUCTS\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "PRODUCTS",
+                  "offset": 46
+                }
+              ],
+              "location": "LoginStepDefs.user_should_be_navigated_to_the_product_page_something(String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@LoginFeature"
+          },
+          {
+            "name": "@Regression"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-11-22T05:17:55.157Z",
+        "before": [
+          {
+            "result": {
+              "duration": 576297229,
+              "status": "passed"
+            },
+            "match": {
+              "location": "BaseClass.setup()"
+            }
+          }
+        ],
+        "line": 24,
+        "name": "Negative login scenario",
+        "description": "",
+        "id": "login-feature;negative-login-scenario;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 74980561,
+              "status": "passed"
+            },
+            "match": {
+              "location": "BaseClass.teardown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 306987272,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "User has lunched website",
+            "match": {
+              "location": "LoginStepDefs.user_has_lunched_website()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 241293097,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "User Enter correct username \"standard_user\" and password \"secre\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "standard_user",
+                  "offset": 29
+                },
+                {
+                  "val": "secre",
+                  "offset": 58
+                }
+              ],
+              "location": "LoginStepDefs.user_enter_correct_username_something_and_password_something(String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 61757022,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "User clicks on login Button",
+            "match": {
+              "location": "LoginStepDefs.user_clicks_on_login_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 30145853,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "User should be getting the \"Epic sadface: Username and password do not match any user in this service\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Epic sadface: Username and password do not match any user in this service",
+                  "offset": 28
+                }
+              ],
+              "location": "LoginStepDefs.user_should_be_getting_the_something(String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@LoginFeature"
+          },
+          {
+            "name": "@Regression"
+          }
+        ]
+      }
+    ],
+    "name": "Login Feature",
+    "description": "",
+    "id": "login-feature",
+    "keyword": "Feature",
+    "uri": "file:src/test/java/features/Login_sauce.feature",
+    "tags": [
+      {
+        "name": "@LoginFeature",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  }
+]
