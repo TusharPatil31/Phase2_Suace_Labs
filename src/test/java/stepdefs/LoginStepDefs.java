@@ -15,7 +15,7 @@ import io.cucumber.java.en.When;
 public class LoginStepDefs {
 	
 	WebDriver driver = BaseClass.driver;
-;	
+	
 	 @Given("^User has lunched website$")
 	    public void user_has_lunched_website() throws Throwable {
 		 
@@ -57,6 +57,7 @@ public class LoginStepDefs {
 			LoginButton.click();
 	        
 	    }
+	    
 
 
 }

@@ -3,11 +3,11 @@
     "line": 2,
     "elements": [
       {
-        "start_timestamp": "2021-11-22T05:17:53.141Z",
+        "start_timestamp": "2021-11-22T07:03:25.369Z",
         "before": [
           {
             "result": {
-              "duration": 1072881427,
+              "duration": 992702294,
               "status": "passed"
             },
             "match": {
@@ -16,13 +16,13 @@
           }
         ],
         "line": 13,
-        "name": "Positive login scenario",
+        "name": "product selection scenario",
         "description": "",
-        "id": "login-feature;positive-login-scenario;;2",
+        "id": "product-selection;product-selection-scenario;;2",
         "after": [
           {
             "result": {
-              "duration": 69857922,
+              "duration": 67784020,
               "status": "passed"
             },
             "match": {
@@ -35,10 +35,10 @@
         "steps": [
           {
             "result": {
-              "duration": 317599408,
+              "duration": 302910885,
               "status": "passed"
             },
-            "line": 6,
+            "line": 5,
             "name": "User has lunched website",
             "match": {
               "location": "LoginStepDefs.user_has_lunched_website()"
@@ -47,10 +47,10 @@
           },
           {
             "result": {
-              "duration": 230683423,
+              "duration": 246390308,
               "status": "passed"
             },
-            "line": 7,
+            "line": 6,
             "name": "User Enter correct username \"standard_user\" and password \"secret_sauce\"",
             "match": {
               "arguments": [
@@ -69,158 +69,62 @@
           },
           {
             "result": {
-              "duration": 134240982,
+              "duration": 138189356,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User clicks on login Button",
+            "match": {
+              "location": "LoginStepDefs.user_clicks_on_login_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 229785122,
               "status": "passed"
             },
             "line": 8,
-            "name": "User clicks on login Button",
+            "name": "User should be clicks on \"Sauce Labs Backpack\"",
             "match": {
-              "location": "LoginStepDefs.user_clicks_on_login_button()"
+              "arguments": [
+                {
+                  "val": "Sauce Labs Backpack",
+                  "offset": 26
+                }
+              ],
+              "location": "select_product.user_should_be_clicks_on_something(String)"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 158931159,
+              "duration": 42744828,
               "status": "passed"
             },
             "line": 9,
-            "name": "User should be navigated to the product page \"PRODUCTS\"",
+            "name": "Product should be added to cart",
             "match": {
-              "arguments": [
-                {
-                  "val": "PRODUCTS",
-                  "offset": 46
-                }
-              ],
-              "location": "LoginStepDefs.user_should_be_navigated_to_the_product_page_something(String)"
+              "location": "select_product.product_should_be_added_to_cart()"
             },
             "keyword": "Then "
           }
         ],
         "tags": [
           {
-            "name": "@LoginFeature"
-          },
-          {
-            "name": "@Regression"
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2021-11-22T05:17:55.157Z",
-        "before": [
-          {
-            "result": {
-              "duration": 576297229,
-              "status": "passed"
-            },
-            "match": {
-              "location": "BaseClass.setup()"
-            }
-          }
-        ],
-        "line": 24,
-        "name": "Negative login scenario",
-        "description": "",
-        "id": "login-feature;negative-login-scenario;;2",
-        "after": [
-          {
-            "result": {
-              "duration": 74980561,
-              "status": "passed"
-            },
-            "match": {
-              "location": "BaseClass.teardown()"
-            }
-          }
-        ],
-        "type": "scenario",
-        "keyword": "Scenario Outline",
-        "steps": [
-          {
-            "result": {
-              "duration": 306987272,
-              "status": "passed"
-            },
-            "line": 17,
-            "name": "User has lunched website",
-            "match": {
-              "location": "LoginStepDefs.user_has_lunched_website()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 241293097,
-              "status": "passed"
-            },
-            "line": 18,
-            "name": "User Enter correct username \"standard_user\" and password \"secre\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "standard_user",
-                  "offset": 29
-                },
-                {
-                  "val": "secre",
-                  "offset": 58
-                }
-              ],
-              "location": "LoginStepDefs.user_enter_correct_username_something_and_password_something(String,String)"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 61757022,
-              "status": "passed"
-            },
-            "line": 19,
-            "name": "User clicks on login Button",
-            "match": {
-              "location": "LoginStepDefs.user_clicks_on_login_button()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 30145853,
-              "status": "passed"
-            },
-            "line": 20,
-            "name": "User should be getting the \"Epic sadface: Username and password do not match any user in this service\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "Epic sadface: Username and password do not match any user in this service",
-                  "offset": 28
-                }
-              ],
-              "location": "LoginStepDefs.user_should_be_getting_the_something(String)"
-            },
-            "keyword": "Then "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@LoginFeature"
-          },
-          {
-            "name": "@Regression"
+            "name": "@ProductSelection"
           }
         ]
       }
     ],
-    "name": "Login Feature",
+    "name": "Product Selection",
     "description": "",
-    "id": "login-feature",
+    "id": "product-selection",
     "keyword": "Feature",
-    "uri": "file:src/test/java/features/Login_sauce.feature",
+    "uri": "file:src/test/java/features/Products.feature",
     "tags": [
       {
-        "name": "@LoginFeature",
+        "name": "@ProductSelection",
         "type": "Tag",
         "location": {
           "line": 1,
