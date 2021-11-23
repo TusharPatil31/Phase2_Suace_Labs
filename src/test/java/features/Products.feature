@@ -8,6 +8,6 @@ Feature: Product Selection
     And User should be clicks on "<Product Name>"
     Then Product should be added to cart
 
-    Examples: 
+	    Examples: 
       | UserName      | Password     | Product Name        |
       | standard_user | secret_sauce | Sauce Labs Backpack |
